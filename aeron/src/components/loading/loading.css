@@ -1,0 +1,47 @@
+.animate-sway {
+    animation: sway 0.5s ease-in-out;
+  }
+  
+  @keyframes sway {
+    0% {
+      transform: translateY(-10px);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .loading-container {
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #3c88b6;
+  }
+
+  .airplane {
+    position: absolute;
+    bottom: -50px;
+    left: -50px;
+    width: 60px;
+    height: 60px;
+    animation: fly 1.5s linear forwards;
+    background-image: url("../../images/Airplane.png");
+    background-size: cover;
+  }
+  
+  @keyframes fly {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(calc(100vw + 50px), calc(-100vh - 50px));
+    }
+  }
+
+ 

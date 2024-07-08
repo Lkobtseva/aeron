@@ -1,0 +1,101 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    transition: width 0.3s ease;
+    border-right: 1px solid #ccc;
+    position: absolute;
+    height: 100vh;
+    box-shadow: 0px 0px 15px 2px rgb(0 0 0 / 34%);
+  }
+  .css-f91fgu {
+    list-style: none;
+    background-color: #fff !important;
+    margin: 0;
+    padding: 0;
+    color: #21252b !important;
+    font-family: lucida grande, tahoma, verdana, arial, sans-serif;
+    font-size: 14px;
+  }
+.css-80f7ae {
+    color: #000000 !important;
+}
+  .sidebar.collapsed {
+    width: 50px ;
+  }
+  
+  .sidebar-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .sidebar-content {
+    overflow-y: auto;
+    flex: 1;
+    padding: 10px;
+    background-color: white;
+  }
+  .active-folder {
+    background-color: #d3d3d3; 
+    color: #000; 
+  }
+  .css-1cf7s5m {
+    padding-left: 3px !important;
+  }
+  .css-79elbk {
+    display: flex !important;
+    flex-flow: column !important;
+    gap: 2px !important;
+}
+.icon{
+    width:7px;
+}
+
+.sidebar-content {
+    padding: 10px;
+  }
+  
+  .add-folder {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .add-folder input {
+    padding: 5px;
+    font-size: 14px;
+    margin-right: 10px;
+    border: 1.5px solid rgba(128, 128, 128, 0.524);
+    border-radius: 7px;
+  }
+  .add-folder input:focus {
+    border-color: #3d8bbb;
+    outline: none; 
+    border-radius: 7px;
+  }
+  .add-folder button {
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 7px;
+    border: none;
+    border: 1.5px solid rgb(239 239 239);
+
+  }
+
+  .add-folder button:hover {
+    background-color: rgba(239, 239, 239, 0.654);
+
+  }
+  
+  .add-folder svg {
+    cursor: pointer;
+    font-size: 18px;
+    color: #3d8bbb;
+  }
+  

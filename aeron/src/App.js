@@ -1,31 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import { Routes, Route } from "react-router-dom";
+import MainPage from "./components/mainPage/mainPage";
+import Loading from "./components/loading/loading";
+import "./index.css";
 
 function App() {
-  const sendMessage = () => {
-    fetch('http://localhost:5000/download', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        message_id: 1,
-        message: 'Hello, world!',
-        result: 'Success',
-      }),
-    })
-    .then(response => response.json())
-    .then(data => {
-      console.log('Success:', data);
-    })
-    .catch((error) => {
-      console.error('Error:', error);
-    });
-  };
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1800);
+
+    return () => clearTimeout(timer); 
+  }, []);
 
   return (
-    <div className="App">
-      <button onClick={sendMessage}>Send Message</button>
+    <div>
+      {isLoading ? (
+        <Loading />
+      ) : (
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+        </Routes>
+      )}
     </div>
   );
 }

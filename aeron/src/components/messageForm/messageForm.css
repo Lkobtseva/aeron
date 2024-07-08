@@ -1,0 +1,44 @@
+.message-form {
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.message-form_text {
+  width: 100%;
+  height: 100%;
+  resize: none;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f1f1f16b;
+  height: 450px;
+  font-family: "Roboto Flex";
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  color: black;
+  margin: 0;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.message-form_text:focus {
+  border-color: #3d8bbb;
+  outline: none;
+}
+
+.message-form_message {
+  font-family: "Roboto Flex";
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+  background-color: #3c88b6;
+  color: white;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding: 11px;
+  box-shadow: 0px 0px 15px 2px rgb(0 0 0 / 31%);
+}

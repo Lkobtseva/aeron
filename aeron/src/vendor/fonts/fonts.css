@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(./WorkSans-ExtraLight.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(./WorkSans-Light.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Open Sans'),
+  url(./WorkSans-Regular.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(./WorkSans-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  font-style: bold;
+  font-weight: 600;
+  font-display: swap;
+  src: url(./WorkSans-SemiBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  font-style: bold;
+  font-weight: 700;
+  font-display: swap;
+  src: url(./WorkSans-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'Roboto Flex';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(./RobotoFlex-Regular.ttf) format("truetype");
+}
